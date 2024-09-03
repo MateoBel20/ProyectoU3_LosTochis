@@ -12,7 +12,7 @@ import {NgOptimizedImage, NgStyle} from "@angular/common";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  logoPath: string = '../../../public/cutlery.png';
-  backgroundImagePath: string = '../../../public/cutlery.png';
+  logoPath: string = '../../cutlery.png';
+  backgroundImagePath: string = '../../fondo.png';
 }
   

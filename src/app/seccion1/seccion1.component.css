@@ -1,162 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-.menu-container {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   background-color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
-  text-align: center; /* Añadido para centrar el contenido dentro del contenedor */
+  flex-direction: row; /* Diseño en fila por defecto */
 }
 
-.menu-header {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-}
-
-.menu-header-content {
-  display: flex;
-  align-items: center;
-  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
-}
-
-.menu-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
-  margin-right: 30px; /* Ajusta el margen derecho para alejar el título del texto */
-}
-
-.menu-description {
-  font-size: 18px;
-  color: #666;
-  margin: 0;
-  line-height: 1.5; /* Ajusta la altura de la línea para mejorar la legibilidad */
-}
-
-.menu-cards {
-  display: flex;
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  gap: 20px; /* Espaciado entre las tarjetas, ajusta según sea necesario */
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: #fdd835;
-  border-radius: 20px;
-  padding: 20px;
-  width: 270px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative; /* Permite usar position: absolute en elementos hijos */
-  display: flex;
-  flex-direction: column; /* Alinea los hijos en columna */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones para transformaciones y sombra */
-}
-
-.card img {
-  width: 100%;
+.image-section img {
+  width: 600px; /* Imagen más grande */
+  height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
+  animation: slideIn 1s ease-out; /* Animación de deslizamiento */
 }
 
-.card-description {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.cta-link {
+.text-section {
+  max-width: 400px;
+  margin-left: 40px; /* Incrementa este valor para mover más a la derecha las letras */
   background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
   color: #fff;
-  text-align: center;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
-  display: inline-flex; /* Asegura que el enlace se expanda según el contenido */
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px; /* Ajusta el padding para el tamaño del enlace */
-  height: 40px; /* Establece una altura fija para los enlaces */
-  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
-  margin-top: auto; /* Empuja el enlace hacia abajo */
-  transition: background-color 0.3s ease, text-decoration 0.3s ease; /* Animaciones para color de fondo y subrayado */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.cta-link:hover {
-  background-color: #333;
-  text-decoration: underline; /* Agrega subrayado en el estado hover */
+h2 {
+  color: #fff;
+  font-size: 24px; /* Ajusta este valor para cambiar el tamaño del título */
+  font-weight: 300; /* Ajusta este valor para cambiar el grosor del título */
+}
+
+h3 {
+  color: #fff;
+  font-size: 28px; /* Ajusta este valor para cambiar el tamaño del subtítulo */
+  font-weight: 700; /* Ajusta este valor para cambiar el grosor del subtítulo */
+}
+
+p {
+  font-size: 16px; /* Ajusta este valor para cambiar el tamaño del texto */
+  font-weight: 300; /* Ajusta este valor para cambiar el grosor del texto */
+}
+
+ul li {
+  font-size: 16px; /* Ajusta este valor para cambiar el tamaño de los elementos de la lista */
+  font-weight: 300; /* Ajusta este valor para cambiar el grosor de los elementos de la lista */
 }
 
 .cta-button {
-  background-color: #fdd835; /* Color amarillo */
-  color: #000; /* Color del texto en el botón */
+  background-color: #fdd835;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 700;
+  padding: 15px 60px; /* Botón más alargado */
+  border-radius: 25px; /* Mantiene el borde redondeado */
+  color: #000;
+  font-weight: bold;
   cursor: pointer;
-  text-decoration: none; /* Cambiado de underline a none */
-  display: inline-flex; /* Asegura que el botón se expanda según el contenido */
-  align-items: center;
-  justify-content: center;
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  max-width: 300px; /* Establece un ancho máximo para mantener uniformidad */
-  height: 50px; /* Establece una altura fija para todos los botones */
-  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
-  margin: 0 auto; /* Centra el botón dentro del contenedor */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones para color de fondo y transformación */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Ajusta este valor para cambiar el tamaño del texto del botón */
+  display: block;
+  margin: 20px auto 0 auto; /* Centra el botón horizontalmente y le da un margen superior */
+  text-align: center;
+  text-decoration: underline; /* Subrayado en el texto del botón */
+  position: relative;
 }
 
-.cta-button.large {
-  font-size: 16px;
-  margin-top: 30px;
-  /* Puedes ajustar el tamaño del botón grande aquí si es necesario */
+.cta-button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Coloca la línea un poco debajo del botón */
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: #000; /* Color del subrayado */
 }
 
 .cta-button:hover {
-  background-color: #e0c800; /* Color amarillo más oscuro para el hover */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+  background-color: #ffd700;
 }
 
+/* Animación de deslizamiento de izquierda a derecha */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-  .cta-button {
-    width: 100%;
-  }
-  .menu-cards {
-    flex-direction: column;
-    align-items: center;
+  .container {
+    flex-direction: column; /* Cambia el diseño a columna en pantallas pequeñas */
   }
 
-  .card {
-    width: 100%;
-    max-width: 300px;
+  .text-section {
+    margin-left: 0; /* Elimina el margen izquierdo cuando se apila */
+    margin-top: 20px; /* Añade margen superior entre la imagen y el texto */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
   }
 
-  .menu-header {
-    justify-content: center;
+  .image-section img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    max-width: 500px; /* Limita el ancho máximo de la imagen */
   }
-
-  .menu-header-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .menu-title {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .menu-description {
-    margin-left: 0;
-  }
-}
-
-.card:hover {
-  transform: scale(1.02); /* Aumenta ligeramente el tamaño de la tarjeta */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
 }

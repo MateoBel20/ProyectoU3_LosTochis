@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './seccion1.component.css'
 })
 export class Seccion1Component {
-  imagePath: string = '../../../public/Comidas.png';
+  imagePath: string = '../../Comidas.png';
 
 }
