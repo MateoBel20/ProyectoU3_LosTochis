@@ -1,3 +1,11 @@
+// Mario Pazmiño
+
+// Jeyner Manzaba
+
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+// Mateo Beltran
 import { NgModule } from "@angular/core";
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -9,8 +17,12 @@ import {FormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
-    imports : 
+    imports :
     [
+      //Jeyner Manzaba
+        MatGridListModule,
+        MatPaginatorModule,
+      //Mateo
         MatButtonModule,
         MatIconModule,
         MatToolbarModule,
@@ -20,10 +32,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         FormsModule,
         MatCardModule,
         MatCheckboxModule
-        
+
     ],
-    exports : 
+    exports :
     [
+      //Jeyner Manzaba
+        MatGridListModule,
+        MatPaginatorModule,
+      //Mateo Beltran
         MatButtonModule,
         MatIconModule,
         MatToolbarModule,

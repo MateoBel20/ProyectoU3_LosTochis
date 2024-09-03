@@ -6,11 +6,12 @@ import { MaterialModule } from './material';
 import { MapaInfoComponent } from './mapa-info/mapa-info.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { CartaComponent } from './carta/carta.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule, CommonModule,MaterialModule,MapaInfoComponent, FooterComponent,FormularioComponent],
+  imports: [RouterOutlet, ReactiveFormsModule, CommonModule,MaterialModule,MapaInfoComponent, FooterComponent,FormularioComponent, CartaComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

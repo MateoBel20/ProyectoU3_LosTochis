@@ -1,0 +1,101 @@
+.barra-transparente {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  z-index: 10;
+}
+
+.imagen-fondo {
+  background-image: url('https://media.admagazine.com/photos/651aeed9da5f4d9a3844a94b/4:3/w_2660,h_1995,c_limit/Porten%CC%83o-restaurante-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-principal {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.separador {
+  flex: 1 1 auto;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.botones button {
+  margin: 0 15px;
+}
+
+.boton-negro {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(243, 242, 242) !important;
+  margin-right: 5px;
+}
+
+.boton-amarillo {
+  background-color: #eac445;
+  color: rgb(29, 28, 28) !important;
+  padding: 10px 20px;
+}
+
+.boton-amarillo:hover {
+  background-color: #eac445;
+}
+
+.boton-negro, .boton-amarillo {
+  font-weight: bold;
+}
+
+.tarjeta-contenido {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 10px;
+}
+
+.tarjeta-contenido h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-contenido h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tarjeta-contenido p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.imagen-plato {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.paginacion
+{
+  background-color: #909090 !important;
+}

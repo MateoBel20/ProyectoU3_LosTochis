@@ -1,15 +1,15 @@
 .container {
   display: flex;
-  justify-content: center; /* Mantiene un espacio igual entre los elementos */
-  align-items: center; /* Alinea las imágenes al inicio del contenedor */
-  gap: 0px; /* Espacio entre los dos bloques principales */
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Para que las imágenes se apilen en pantallas pequeñas */
-  max-width: 1110px; /* Limita el ancho máximo para pantallas grandes */
+  flex-wrap: wrap;
+  max-width: 1110px;
 }
 
 .mapa-image {
-  width: 51%; /* Las dos secciones ocupan la mitad del espacio cada una */
+  width: 51%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -17,15 +17,15 @@
 }
 
 .mapa-image img {
-  width: 100%; /* Ocupa todo el ancho disponible */
-  height: auto; 
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .restaurant-section {
   position: relative;
-  width: 49%; /* Las dos secciones ocupan la mitad del espacio cada una */
+  width: 49%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
 
 .restaurant-buttons {
   position: absolute;
-  top: 50%; /* Centra los botones verticalmente en la imagen */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
