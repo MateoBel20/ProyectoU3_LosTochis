@@ -1,38 +1,76 @@
-.footer {
-    width: 1480px;
-    background-color: #000;
-    color: #ffd700;
-    padding: 20px;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+.footer-container {
+  background-color: #000;
+  color: #d4af37; /* Color dorado */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Open Sauce One', sans-serif; /* Fuente por defecto para el contenido */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  margin: 10px;
+}
+
+.footer-item h3 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif; /* Fuente estilizada para el título */
+  font-size: 1.6em; /* Ajusta el tamaño del título aquí */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.footer-item h4 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-family: 'Open Sauce One', sans-serif; /* Fuente para los subtítulos */
+  font-size: 0.9em; /* Ajusta el tamaño del subtítulo aquí */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.footer-item p, .footer-item a {
+  margin: 5px 0;
+  color: #d4af37;
+  text-decoration: none;
+  font-family: 'Open Sauce One', sans-serif; /* Fuente para el contenido */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
   .footer-content {
-    max-width: 1480px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
-  
-  .footer-section {
-    flex: 1;
-    margin: 0 20px;
+
+  .footer-item {
+    margin: 10px 0;
     text-align: center;
   }
-  
-  .footer-section h2, 
-  .footer-section h3 {
-    margin: 0 0 10px 0;
-    font-weight: bold;
+
+  .footer-item h3 {
+    font-size: 1.4em; /* Ajusta el tamaño del título en pantallas más pequeñas */
   }
-  
-  .footer-section p, 
-  .footer-section a {
-    margin: 0;
-    line-height: 1.5;
-    color: #ffd700;
-    text-decoration: none;
+
+  .footer-item h4 {
+    font-size: 1.2em; /* Ajusta el tamaño del subtítulo en pantallas más pequeñas */
   }
-  
-  .footer-section a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .footer-item h3 {
+    font-size: 1.2em; /* Ajusta aún más el tamaño del título en pantallas más pequeñas */
   }
+
+  .footer-item h4 {
+    font-size: 1em; /* Ajusta aún más el tamaño del subtítulo en pantallas más pequeñas */
+  }
+}

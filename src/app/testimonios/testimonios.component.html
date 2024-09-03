@@ -1,0 +1,11 @@
+<div class="testimonios-container">
+  <h2 class="titulo-clientes">Comentarios de los clientes</h2>
+
+  <div class="testimonios">
+    <div class="testimonio" *ngFor="let testimonio of testimonios">
+      <img [src]="testimonio.imagen" alt="Foto de {{testimonio.nombre}}" class="imagen-redonda" />
+      <p>{{testimonio.comentario}}</p>
+      <strong>{{testimonio.nombre}}</strong>
+    </div>
+  </div>
+</div>
