@@ -5,11 +5,12 @@ import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from './material';
 import { MapaInfoComponent } from './mapa-info/mapa-info.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule, CommonModule,MaterialModule,MapaInfoComponent, FooterComponent],
+  imports: [RouterOutlet, ReactiveFormsModule, CommonModule,MaterialModule,MapaInfoComponent, FooterComponent,FormularioComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
