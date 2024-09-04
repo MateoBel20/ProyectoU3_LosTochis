@@ -1,41 +1,97 @@
-<header>
-  <div class="imagen-fondo">
-    <div class="texto-principal">
-      <h1>DISFRUTA DE UN AMBIENTE ÚNICO Y ESPECIAL</h1>
-      <div class="botones">
-        <button mat-raised-button class="boton-amarillo">VER CARTA</button>
-        <button mat-raised-button class="boton-amarillo">RESERVAR MESA</button>
+<header class="header" [ngStyle]="{ 'background-image': 'url(' + backgroundImagePath + ')' }">
+  <div class="container">
+       <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="display-4">CENA CON NOSOTROS LOS <br> TOCHIS</h1>
+        <div class="button-group d-flex justify-content-center my-4">
+          <button class="btn btn-dark btn-lg button-dark" [routerLink]="['/']" >INICIO</button>
+          <button class="btn btn-warning btn-lg button-warning" [routerLink]="['/reserva']">RESERVAR MESA</button>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
-<main>
-  <mat-grid-list cols="2" rowHeight="2:2">
-    <mat-grid-tile>
-      <img src="https://png.pngtree.com/png-clipart/20230427/original/pngtree-food-gourmet-western-food-png-image_9112072.png" alt="Plato de comida" class="imagen-plato">
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="tarjeta-contenido">
-        <mat-card-content>
-          <h4>Historia</h4>
-          <h2>20 años sintiendo la gastronomía</h2>
-          <p>
-            La barra de alimentos incluye <strong>mariscos</strong>, <strong>pescados</strong>,
-            <strong>carnes</strong>, <strong>ensaladas</strong> y <strong>postres</strong>. En el buffet
-            sirven platillos como: chalupas de pescado, coctel de camarón, coctel campechano, aguacate
-            con camarón, berenjena con mariscos, chimpochole de jaiba, mojarra zarandeada.
-          </p>
-          <ul>
-            <li>Pulpo...</li>
-            <li>Gambas...</li>
-            <li>Ostras...</li>
-          </ul>
-          <button mat-raised-button class="boton-amarillo">VER CARTA</button>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</main>
+<div class="menu-container">
+  <div class="menu-header">
+    <div class="menu-header-content">
+      <h2 class="menu-title">ENTRADAS</h2>
+    </div>
+  </div>
 
+  <div class="menu-cards">
+    <div class="card">
+      <img src="../../Comida1.png" alt="Ceviche">
+      <p class="card-description">Comidas abundantes y saludables para toda la familia</p>
+      <a class="cta-link">PRUEBA NUESTROS CEVICHES Y MÁS</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida2.png" alt="Pescado">
+      <p class="card-description">Donde la frescura del mar se encuentra con la excelencia culinaria</p>
+      <a class="cta-link">SABORES DEL OCÉANO EN CADA PLATO</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida3.png" alt="Mariscos">
+      <p class="card-description">Encuéntranos y déjate llevar por un viaje gastronómico marino</p>
+      <a class="cta-link">SABOREA GASTRONOMÍA MARINA</a>
+    </div>
+  </div>
+</div>
 
+<div class="menu-container">
+  <div class="menu-header">
+    <div class="menu-header-content">
+      <h2 class="menu-title">Platos Principales</h2>
+    </div>
+  </div>
+
+  <div class="menu-cards">
+    <div class="card">
+      <img src="../../Comida1.png" alt="Ceviche">
+      <p class="card-description">Comidas abundantes y saludables para toda la familia</p>
+      <a class="cta-link">PRUEBA NUESTROS CEVICHES Y MÁS</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida2.png" alt="Pescado">
+      <p class="card-description">Donde la frescura del mar se encuentra con la excelencia culinaria</p>
+      <a class="cta-link">SABORES DEL OCÉANO EN CADA PLATO</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida3.png" alt="Mariscos">
+      <p class="card-description">Encuéntranos y déjate llevar por un viaje gastronómico marino</p>
+      <a class="cta-link">SABOREA GASTRONOMÍA MARINA</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida1.png" alt="Ceviche">
+      <p class="card-description">Comidas abundantes y saludables para toda la familia</p>
+      <a class="cta-link">PRUEBA NUESTROS CEVICHES Y MÁS</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida2.png" alt="Pescado">
+      <p class="card-description">Donde la frescura del mar se encuentra con la excelencia culinaria</p>
+      <a class="cta-link">SABORES DEL OCÉANO EN CADA PLATO</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida3.png" alt="Mariscos">
+      <p class="card-description">Encuéntranos y déjate llevar por un viaje gastronómico marino</p>
+      <a class="cta-link">SABOREA GASTRONOMÍA MARINA</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida1.png" alt="Ceviche">
+      <p class="card-description">Comidas abundantes y saludables para toda la familia</p>
+      <a class="cta-link">PRUEBA NUESTROS CEVICHES Y MÁS</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida2.png" alt="Pescado">
+      <p class="card-description">Donde la frescura del mar se encuentra con la excelencia culinaria</p>
+      <a class="cta-link">SABORES DEL OCÉANO EN CADA PLATO</a>
+    </div>
+    <div class="card">
+      <img src="../../Comida3.png" alt="Mariscos">
+      <p class="card-description">Encuéntranos y déjate llevar por un viaje gastronómico marino</p>
+      <a class="cta-link">SABOREA GASTRONOMÍA MARINA</a>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -3,7 +3,7 @@
 .menu-container {
   background-color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
-  text-align: center; /* Añadido para centrar el contenido dentro del contenedor */
+  text-align: center; 
    padding-top: 50px;
    padding-bottom: 50px;
 }
@@ -11,13 +11,13 @@
 .menu-header {
   margin-bottom: 20px;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
 }
 
 .menu-header-content {
   display: flex;
   align-items: center;
-  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+  text-align: left;
 }
 
 .menu-title {
@@ -25,20 +25,20 @@
   font-weight: 700;
   color: #333;
   margin: 0;
-  margin-right: 30px; /* Ajusta el margen derecho para alejar el título del texto */
+  margin-right: 30px;
 }
 
 .menu-description {
   font-size: 18px;
   color: #666;
   margin: 0;
-  line-height: 1.5; /* Ajusta la altura de la línea para mejorar la legibilidad */
+  line-height: 1.5;
 }
 
 .menu-cards {
   display: flex;
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  gap: 50px; /* Espaciado entre las tarjetas, ajusta según sea necesario */
+  justify-content: center;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -49,11 +49,11 @@
   width: 270px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  position: relative; /* Permite usar position: absolute en elementos hijos */
+  position: relative;
   display: flex;
-  flex-direction: column; /* Alinea los hijos en columna */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones para transformaciones y sombra */
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
@@ -76,52 +76,51 @@
   border-radius: 30px;
   font-size: 14px;
   font-weight: 700;
-  text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
-  display: inline-flex; /* Asegura que el enlace se expanda según el contenido */
+  text-decoration: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 35px; /* Ajusta el padding para el tamaño del enlace */
-  height: 40px; /* Establece una altura fija para los enlaces */
-  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
-  margin-top: auto; /* Empuja el enlace hacia abajo */
-  transition: background-color 0.3s ease, text-decoration 0.3s ease; /* Animaciones para color de fondo y subrayado */
+  padding: 35px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-top: auto;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .cta-link:hover {
   background-color: #333;
-  text-decoration: none; /* Agrega subrayado en el estado hover */
+  text-decoration: none;
 }
 
 .cta-button {
-  background-color:  #f7c11f; /* Color amarillo */
-  color: #000; /* Color del texto en el botón */
+  background-color:  #f7c11f;
+  color: #000;
   border: none;
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  text-decoration: none; /* Cambiado de underline a none */
-  display: inline-flex; /* Asegura que el botón se expanda según el contenido */
+  text-decoration: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  max-width: 300px; /* Establece un ancho máximo para mantener uniformidad */
-  height: 50px; /* Establece una altura fija para todos los botones */
-  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
-  margin: 0 auto; /* Centra el botón dentro del contenedor */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones para color de fondo y transformación */
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button.large {
   font-size: 16px;
   margin-top: 30px;
-  /* Puedes ajustar el tamaño del botón grande aquí si es necesario */
 }
 
 .cta-button:hover {
-  background-color: #000000; /* Color amarillo más oscuro para el hover */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+  background-color: #000000;
+  transform: scale(1.05);
   color: #f4f4f4;
 }
 
@@ -160,6 +159,6 @@
 }
 
 .card:hover {
-  transform: scale(1.02); /* Aumenta ligeramente el tamaño de la tarjeta */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

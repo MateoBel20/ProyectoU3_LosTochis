@@ -6,8 +6,7 @@
 
 .body-MateoBeltram {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
-    background-image: url('../../../public/fondo.png');
+    background-color: #e2e2e2;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -23,7 +22,7 @@
     background-color: rgba(0, 0, 0, 0.88);
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     margin: auto;
@@ -163,12 +162,13 @@ section {
 
   .example-button-row {
     display: table-cell;
-    max-width: 600px;
+    width: 400px !important;
     margin: 8px 0;
+    margin-right: 50px;
   }
 
   .example-button-row .mat-mdc-button-base {
-    margin: 8px 8px 8px 0;
+    margin: 8px 8px 8px 8px;
     color: #000000;
   }
 
@@ -183,5 +183,4 @@ section {
     display: flex;
     justify-content: center;
     width: 120px;
-
   }
