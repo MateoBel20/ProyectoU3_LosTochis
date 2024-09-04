@@ -12,17 +12,21 @@ import { MenuVariedadComponent } from './menu-variedad/menu-variedad.component';
 import { TestimoniosComponent } from './testimonios/testimonios.component';
 import { FooterComponent } from './footer/footer.component';
 
+import {NgOptimizedImage, NgStyle} from "@angular/common";
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ReactiveFormsModule, CommonModule,MaterialModule,
-      MapaInfoComponent, FooterComponent,FormularioComponent, CartaComponent, RouterLink, RouterModule, HeaderComponent, Seccion1Component, MenuVariedadComponent, TestimoniosComponent, FooterComponent],
+      MapaInfoComponent, FooterComponent,FormularioComponent, CartaComponent,
+      RouterLink, RouterModule, HeaderComponent, Seccion1Component, MenuVariedadComponent,
+      TestimoniosComponent, FooterComponent, NgStyle, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'beltran_proyecto_U3';
-
+  logoPath: string = '../../cutlery.png';
 }

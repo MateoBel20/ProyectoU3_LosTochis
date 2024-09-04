@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
-
-
-
-
-
 /* Estilos generales */
 .header {
   background-size: cover;
@@ -113,7 +107,7 @@
 }
 
 .button-dark, .button-warning {
-  border: none;
+    border: 0.5px solid black;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   border-radius: 50px;
@@ -125,11 +119,22 @@
 .button-dark {
   background-color: #000000;
   color: #ffffff;
+  border: 0.5px solid rgb(63, 63, 63);
 }
+
+.button-dark:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
 
 .button-warning {
   background-color: #ffc107;
   color: black;
+}
+.button-warning:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Responsive Design */

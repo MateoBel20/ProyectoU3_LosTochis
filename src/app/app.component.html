@@ -1,34 +1,23 @@
 <mat-toolbar class="barra-transparente">
-  <button mat-button class="boton-negro">LOS TOCHIS</button>
+  <button mat-button class="boton-negro" routerLink="inicio">LOS TOCHIS</button>
+  <img [ngSrc]="logoPath" alt="Logo" width="45" height="45" loading="lazy">
   <span class="separador"></span>
-  <button mat-button class="boton-negro" routerLink="inicio" >Inicio</button>
+  <button mat-button class="boton-negro" routerLink="inicio">INICIO</button>
   <button mat-button class="boton-negro" routerLink="carta">CARTA</button>
-  <button mat-button class="boton-negro">LOCALIZACIÓN</button>
   <button mat-raised-button class="boton-amarillo" routerLink="reserva">RESERVAR</button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
 
 <!-- <app-formulario></app-formulario> -->
-<app-formulario></app-formulario>
+<!-- <app-formulario></app-formulario> -->
 <!-- <app-carta></app-carta> -->
 
 
 <!--  Mario Pazmiño
-<app-header>
-
-</app-header>
-<app-seccion1>
-
-</app-seccion1>
-
-<app-menu-variedad>
-
-</app-menu-variedad>
-<app-testimonios>
-
-</app-testimonios>
-<app-footer>
-
-</app-footer>
+<app-header></app-header>
+<app-seccion1></app-seccion1>
+<app-menu-variedad></app-menu-variedad>
+<app-testimonios></app-testimonios>
+<app-footer></app-footer>
 -->

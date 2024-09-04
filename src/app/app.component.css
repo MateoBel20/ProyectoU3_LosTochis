@@ -6,16 +6,6 @@
   z-index: 10;
 }
 
-.imagen-fondo {
-  background-image: url('https://media.admagazine.com/photos/651aeed9da5f4d9a3844a94b/4:3/w_2660,h_1995,c_limit/Porten%CC%83o-restaurante-1.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .texto-principal {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
@@ -37,9 +27,9 @@
 }
 
 .boton-negro {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(85, 83, 83, 0.5);
   color: rgb(243, 242, 242) !important;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .boton-amarillo {
